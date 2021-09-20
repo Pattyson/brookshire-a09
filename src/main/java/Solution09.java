@@ -8,14 +8,14 @@ import java.util.Scanner;
 public class Solution09 {
 
         public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in); //scanner object
+            Scanner input = new Scanner(System.in); //scanner object
             double sqFeetPerGallon = 350;
 
             System.out.print("Enter length: ");
-            double length = sc.nextDouble(); //take length from user
+            double length = input.nextDouble(); //take length from user
 
             System.out.print("Enter width: ");
-            double width = sc.nextDouble(); //take width from user
+            double width = input.nextDouble(); //take width from user
 
             double totalSq = length*width; //calculate total squre
             int gallon = (int)Math.ceil(totalSq/sqFeetPerGallon); //calculate number of gallon
